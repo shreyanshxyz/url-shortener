@@ -12,7 +12,7 @@ try {
     .connect(process.env.connection_url)
     .then(() => console.log("Connected to Database Succesfully!"));
 } catch (error) {
-  handleError(error);
+  console.log(error);
 }
 
 app.use("/users", authRoute);
